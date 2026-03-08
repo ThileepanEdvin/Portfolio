@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>NEMESIA — Projet | Thileepan Edvin</title>
+  <meta name="description" content="Projet JavaFX NEMESIA : jeu 2D avec collisions, gravité, inventaire et architecture MVC." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-light">THILEEPAN</span>
+        <span class="logo-accent">EDVIN</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#projets">← Retour</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container narrow">
+        <p class="section-kicker">Projet JavaFX</p>
+        <h1>NEMESIA — Jeu 2D JavaFX</h1>
+        <p class="project-intro">
+          Projet de jeu 2D inspiré de Terraria intégrant déplacement, saut, gravité,
+          collisions, inventaire et terrain matriciel avec une architecture MVC claire.
+        </p>
+
+        <div class="tags big-tags">
+          <span>Java</span>
+          <span>JavaFX</span>
+          <span>MVC</span>
+          <span>Collisions</span>
+          <span>Inventaire</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="https://github.com/ThileepanEdvin" target="_blank" rel="noreferrer" class="btn btn-primary">Voir sur GitHub</a>
+          <a href="index.html#projets" class="btn btn-secondary">Retour aux projets</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="project-gallery">
+          <figure class="project-shot">
+            <img src="assets/images/Nemesia/accueil_Nemesia.png" alt="Menu principal NEMESIA">
+            <figcaption>Menu principal — ambiance générale et interface</figcaption>
+          </figure>
+
+          <figure class="project-shot">
+            <img src="assets/images/Nemesia/Spawn.png" alt="Gameplay NEMESIA">
+            <figcaption>Gameplay — terrain, maison, HUD et inventaire</figcaption>
+          </figure>
+
+          <figure class="project-shot small-centered-shot">
+            <img src="assets/images/Nemesia/za1.png" alt="Table de craft NEMESIA">
+            <figcaption>Table de craft — échange de matériaux contre des armes</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-info-grid">
+          <div class="info-card">
+            <h3>Fonctionnalités</h3>
+            <ul>
+              <li>Déplacement horizontal, saut et gravité</li>
+              <li>Collisions avec le terrain</li>
+              <li>Inventaire et sélection d’objets</li>
+              <li>Terrain matriciel avec affichage dynamique</li>
+              <li>Organisation MVC</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>Ce que cela montre</h3>
+            <ul>
+              <li>Maîtrise de Java et JavaFX</li>
+              <li>Structuration propre du projet</li>
+              <li>Gestion logique d’un jeu 2D</li>
+              <li>Travail sur l’interface et l’interaction utilisateur</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Thileepan Edvin — Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

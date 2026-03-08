@@ -2,225 +2,337 @@
 <html lang="fr">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Thileepan Edvin | Portfolio</title>
-
-  <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@600;700&family=Inter:wght@300;400;500;600&display=swap" rel="stylesheet">
+  <meta name="description" content="Portfolio de Thileepan Edvin, étudiant en BUT Informatique. Projets Java, JavaFX, Web, SQL." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="style.css" />
+  <meta name="author" content="Thileepan Edvin">
+<meta name="keywords" content="portfolio développeur, java, javafx, but informatique, développeur logiciel">
 </head>
 <body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-light">THILEEPAN</span>
+        <span class="logo-accent">EDVIN</span>
+      </a>
 
-<header class="topbar">
-  <div class="brand">
-    <span class="brand__name">THILEEPAN</span>
-    <span class="brand__name brand__name--accent">EDVIN</span>
+      <nav class="main-nav">
+        <a href="#apropos">À propos</a>
+        <a href="#projets">Projets</a>
+        <a href="#competences">Compétences</a>
+        <a href="#formation">Formation</a>
+        <a href="#contact">Contact</a>
+
+        <div class="nav-links">
+          <a href="assets/cv/Thileepan_Edvin_CV.pdf" class="nav-btn" download>
+            📄 CV
+          </a>
+
+          <a href="https://github.com/ThileepanEdvin" target="_blank" class="nav-btn">
+            💻 GitHub
+          </a>
+
+          <a href="https://www.linkedin.com/in/edvin-thileepan-858794393/" target="_blank" class="nav-btn">
+            🔗 LinkedIn
+          </a>
+        </div>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="hero">
+      <div class="container hero-grid">
+        <div class="hero-text">
+          <p class="hero-badge">Étudiant en 2e année de BUT Informatique</p>
+          <h1>Thileepan Edvin</h1>
+          <p class="hero-description">
+          Étudiant en 2e année de BUT Informatique à l'IUT de Montreuil (Université Paris 8),
+          je recherche un stage en développement logiciel d’une durée de 8 à 14 semaines
+          entre avril et juin.
+
+          Je développe des applications en Java, JavaFX et Web en utilisant des architectures
+          structurées comme MVC, avec gestion d’événements et bases de données relationnelles.
+          </p>
+
+          <div class="hero-actions">
+            <a href="#projets" class="btn btn-primary">Voir mes projets</a>
+            <a href="#contact" class="btn btn-secondary">Me contacter</a>
+          </div>
+
+          <div class="hero-infos">
+            <span>📍 Montreuil, France</span>
+            <span>🚗 Permis B</span>
+            <span>📅 Stage Avril à Juin</span>
+          </div>
+        </div>
+
+        <div class="hero-card">
+          <div class="hero-card-inner">
+            <p class="mini-title">Profil</p>
+            <h3>Développement logiciel</h3>
+            <p>
+              Java, JavaFX, SQL, Web, architecture MVC, logique applicative
+              et projets académiques concrets.
+            </p>
+
+            <div class="hero-tags">
+              <span>Java</span>
+              <span>JavaFX</span>
+              <span>SQL</span>
+              <span>Web</span>
+              <span>MVC</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <section id="apropos" class="section">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Présentation</p>
+          <h2>À propos</h2>
+        </div>
+
+        <div class="text-card">
+          <p>
+          Étudiant en deuxième année de BUT Informatique à l'IUT de Montreuil,
+          je recherche un stage en développement logiciel.
+
+          Au cours de ma formation, j’ai réalisé plusieurs projets en Java, JavaFX
+          et développement web, incluant la création d’interfaces graphiques,
+          la gestion des événements, l’utilisation de bases de données
+          relationnelles et l’architecture MVC.
+          </p>
+          <p>
+            J’aime produire un travail clair, lisible et structuré, avec des applications simples à utiliser
+            et un code organisé.
+          </p>
+        </div>
+      </div>
+    </section>
+
+<section id="projets" class="section section-alt">
+  <div class="container">
+
+    <div class="section-heading">
+      <p class="section-kicker">Réalisations</p>
+      <h2>Projets sélectionnés</h2>
+      <p class="section-subtitle">
+        Quelques projets concrets réalisés en Java, JavaFX, SQL et Web.
+      </p>
+    </div>
+
+    <div class="projects-list">
+
+      <!-- NEMESIA -->
+      <a href="nemesia.html" class="project-row">
+        <img src="assets/images/Nemesia/a12.png" alt="Nemesia">
+
+        <div class="project-row-content">
+          <h3>NEMESIA — Jeu 2D JavaFX</h3>
+
+          <div class="tags">
+            <span>JavaFX</span>
+            <span>MVC</span>
+          </div>
+
+          <p>
+          Jeu 2D inspiré de Terraria développé en JavaFX : déplacement, saut,
+          gestion de la gravité et des collisions.
+
+          Implémentation d’un personnage jouable, de mobs ennemis,
+          d’un système de dégâts et d’un inventaire interactif
+          avec terrain matriciel.
+          </p>
+
+          <span class="project-link">Voir le projet →</span>
+        </div>
+      </a>
+
+      <!-- JO -->
+      <a href="JO.html" class="project-row">
+        <img src="assets/images/JO/jo1.png" alt="JO">
+
+        <div class="project-row-content">
+          <h3>Site web collaboratif — Paris 2024</h3>
+
+          <div class="tags">
+            <span>HTML</span>
+            <span>CSS</span>
+          </div>
+
+          <p>
+            Site réalisé en équipe avec navigation multi-pages,
+            contenus illustrés et cohérence visuelle.
+          </p>
+
+          <span class="project-link">Voir le projet →</span>
+        </div>
+      </a>
+
+      <!-- BUVETTE -->
+      <a href="buvette.html" class="project-row">
+        <img src="assets/images/buvette/b1.png" alt="Buvette">
+
+        <div class="project-row-content">
+          <h3>Buvette 2.0 — Application Web</h3>
+
+          <div class="tags">
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>JS</span>
+          </div>
+
+          <p>
+          Application web de gestion de buvette développée en
+          HTML, CSS, Bootstrap, PHP et MySQL.
+
+          Gestion des comptes clients, des commandes,
+          des stocks et interaction complète entre
+          l’interface et la base de données.
+          </p>
+
+          <span class="project-link">Voir le projet →</span>
+        </div>
+      </a>
+
+      <!-- VM -->
+      <div class="project-row">
+        <div class="project-row-content">
+          <h3>Machine virtuelle & services</h3>
+
+          <div class="tags">
+            <span>Linux</span>
+            <span>VirtualBox</span>
+          </div>
+
+          <p>
+            Installation et configuration d’une VM Linux avec Apache,
+            PHP et base de données.
+          </p>
+        </div>
+      </div>
+
+      <!-- SQL -->
+      <div class="project-row">
+        <div class="project-row-content">
+          <h3>Base de données pour une entreprise</h3>
+
+          <div class="tags">
+            <span>PostgreSQL</span>
+            <span>SQL</span>
+          </div>
+
+          <p>
+            Conception MCD / MLD, création des tables,
+            insertions et requêtes SQL.
+          </p>
+        </div>
+      </div>
+
+    </div>
+
   </div>
 
-  <nav class="nav">
-    <a href="#apropos">À propos</a>
-    <a href="#projets">Projets</a>
-    <a href="#competences">Compétences</a>
-    <a href="#formation">Formation</a>
-    <a href="#contact">Contact</a>
-  </nav>
-</header>
-
-<main>
-  <!-- HERO -->
-  <section class="hero">
-    <div class="hero__card">
-      <p class="hero__kicker">Étudiant en 2e année de BUT Informatique</p>
-      <h1 class="hero__title">Portfolio</h1>
-      <p class="hero__subtitle">
-        Recherche de stage (8 à 14 semaines) — Avril à Juin
-      </p>
-
-      <div class="hero__cta">
-        <a class="btn btn--primary" href="#projets">Voir mes projets</a>
-        <a class="btn btn--ghost" href="#contact">Me contacter</a>
-      </div>
-
-      <div class="hero__meta">
-        <span>📍 Montreuil, France</span>
-        <span>🚗 Permis B</span>
-      </div>
-    </div>
-  </section>
-
-  <!-- À PROPOS -->
-  <section id="apropos" class="section">
-    <div class="section__head">
-      <h2>À propos</h2>
-      <p>
-        Étudiant en 2e année de BUT Informatique, je recherche un stage en développement logiciel.
-        J’ai développé plusieurs applications en Java et JavaFX intégrant une architecture MVC, la gestion d’événements
-        et des bases de données relationnelles. Rigoureux et autonome, je m’adapte rapidement aux environnements
-        techniques et au travail en équipe.
-      </p>
-    </div>
-  </section>
-
-  <!-- PROJETS -->
-  <section id="projets" class="section section--alt">
-    <div class="section__head">
-      <h2>Projets sélectionnés</h2>
-      <p>Quelques projets concrets réalisés en cours et en pratique (Java/JavaFX, SQL, Web).</p>
-    </div>
-
-    <div class="grid">
-      <article class="card">
-        <div class="card__top">
-          <h3>NEMESIA — Jeu 2D JavaFX</h3>
-          <span class="tag">JavaFX</span>
-          <span class="tag">MVC</span>
+</section>
+    <section id="competences" class="section">
+      <div class="container">
+        <div class="section-heading">
+          <p class="section-kicker">Savoir-faire</p>
+          <h2>Compétences techniques</h2>
         </div>
-        <ul>
-          <li>Création d’un jeu inspiré de Terraria en Java/JavaFX : déplacement, saut, gravité, collisions.</li>
-          <li>Implémentation d’un personnage jouable, de mobs, d’un système de dégâts et d’un inventaire interactif.</li>
-          <li>Gestion d’un terrain matriciel avec affichage dynamique.</li>
-          <li>Architecture MVC structurée.</li>
-        </ul>
-      </article>
 
-      <article class="card">
-        <div class="card__top">
-          <h3>Machine virtuelle & services</h3>
-          <span class="tag">VirtualBox</span>
-          <span class="tag">Linux</span>
-        </div>
-        <ul>
-          <li>Installation et configuration d’une VM (VirtualBox) avec un système Linux.</li>
-          <li>Mise en place d’un environnement web (Apache/PHP) et base de données (MySQL / PostgreSQL).</li>
-          <li>Tests et validation du fonctionnement des services.</li>
-        </ul>
-      </article>
+        <div class="skills-grid">
+          <div class="skill-card">
+            <h3>Langages</h3>
+            <p>Java, Python, SQL, HTML, CSS, JavaScript, PHP</p>
+          </div>
 
-      <article class="card">
-        <div class="card__top">
-          <h3>Base de données pour une entreprise</h3>
-          <span class="tag">PostgreSQL</span>
-          <span class="tag">SQL</span>
-        </div>
-        <ul>
-          <li>Conception complète : MCD + MLD.</li>
-          <li>Réalisation de requêtes SQL (création, insertion, jointures, sélection).</li>
-          <li>Projet réalisé en équipe : répartition des tâches + documentation.</li>
-        </ul>
-      </article>
+          <div class="skill-card">
+            <h3>Bases de données</h3>
+            <p>PostgreSQL, MySQL, MongoDB (notions), NoSQL (notions)</p>
+          </div>
 
-      <article class="card">
-        <div class="card__top">
-          <h3>Site web collaboratif HTML/CSS</h3>
-          <span class="tag">HTML</span>
-          <span class="tag">CSS</span>
-        </div>
-        <ul>
-          <li>Participation à la création d’un site en HTML/CSS présentant des aspects économiques, écologiques
-            et les infrastructures sportives des JO/Paralympiques 2028.</li>
-          <li>Travail en équipe et organisation des contenus.</li>
-        </ul>
-      </article>
+          <div class="skill-card">
+            <h3>Outils</h3>
+            <p>Git, GitHub, JavaFX, VS Code, VirtualBox</p>
+          </div>
 
-      <article class="card">
-        <div class="card__top">
-          <h3>Site de gestion de buvette</h3>
-          <span class="tag">C</span>
-          <span class="tag">PHP</span>
-          <span class="tag">JavaScript</span>
-          <span class="tag">MySQL</span>
-        </div>
-        <ul>
-          <li>Développement d’un site web dynamique (HTML/CSS/Bootstrap).</li>
-          <li>Implémentation de fonctionnalités + interaction complète site ↔ base de données.</li>
-          <li>Connexion et gestion d’une base MySQL via phpMyAdmin.</li>
-          <li>Projet fonctionnel et testé.</li>
-        </ul>
-      </article>
-    </div>
-  </section>
-
-  <!-- COMPÉTENCES -->
-  <section id="competences" class="section">
-    <div class="section__head">
-      <h2>Compétences techniques</h2>
-      <p>Stack principale + outils utilisés régulièrement.</p>
-    </div>
-
-    <div class="grid grid--2">
-      <div class="card card--compact">
-        <h3>Langages</h3>
-        <p>Java, Python, SQL, HTML/CSS, JavaScript, C, PHP</p>
-      </div>
-
-      <div class="card card--compact">
-        <h3>Bases de données</h3>
-        <p>PostgreSQL, MySQL, MongoDB (notions), NoSQL (notions)</p>
-      </div>
-
-      <div class="card card--compact">
-        <h3>Outils</h3>
-        <p>Git, GitHub, JavaFX, VS Code, VirtualBox</p>
-      </div>
-
-      <div class="card card--compact">
-        <h3>Concepts</h3>
-        <p>POO, MVC, API REST (notions), Modélisation relationnelle</p>
-      </div>
-    </div>
-  </section>
-
-  <!-- FORMATION -->
-  <section id="formation" class="section section--alt">
-    <div class="section__head">
-      <h2>Formation</h2>
-    </div>
-
-    <div class="timeline">
-      <div class="timeline__item">
-        <div class="timeline__date">2024 — 2026</div>
-        <div class="timeline__content">
-          <h3>IUT de Montreuil — Université Paris 8</h3>
-          <p>2e année de BUT Informatique</p>
+          <div class="skill-card">
+            <h3>Concepts</h3>
+            <p>POO, MVC, API REST (notions), modélisation relationnelle</p>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="timeline__item">
-        <div class="timeline__date">2023 — 2024</div>
-        <div class="timeline__content">
-          <h3>Lycée Condorcet (Montreuil 93)</h3>
-          <p>Baccalauréat Général — Spécialités Mathématiques, NSI, Physique-Chimie</p>
+    <section id="formation" class="section section-alt">
+      <div class="container narrow">
+        <div class="section-heading">
+          <p class="section-kicker">Parcours</p>
+          <h2>Formation</h2>
+        </div>
+
+        <div class="timeline">
+          <div class="timeline-item">
+            <span class="timeline-date">2024 — 2026</span>
+            <div>
+              <h3>IUT de Montreuil — Université Paris 8</h3>
+              <p>2e année de BUT Informatique</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">2023 — 2024</span>
+            <div>
+              <h3>Lycée Condorcet — Montreuil</h3>
+              <p>Baccalauréat Général — Mathématiques, NSI, Physique-Chimie</p>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <span class="timeline-date">Langues</span>
+            <div>
+            <p>Tamoul : natif — Français : natif — Anglais : niveau B2</p>            </div>
+          </div>
         </div>
       </div>
+    </section>
 
-      <div class="timeline__item">
-        <div class="timeline__date">Langues</div>
-        <div class="timeline__content">
-          <p>Français : natif — Anglais : niveau B2</p>
+    <section id="contact" class="section contact-section">
+      <div class="container narrow">
+        <div class="section-heading center light">
+          <p class="section-kicker">Échange</p>
+          <h2>Contact</h2>
+          <p class="section-subtitle">
+            Me contacter ? Voici les liens .   
+          </p>
+        </div>
+
+        <div class="contact-card">
+          <a href="mailto:thileepanedvin@gmail.com" class="contact-item">📩 thileepanedvin@gmail.com</a>
+          <a href="https://github.com/ThileepanEdvin" target="_blank" rel="noreferrer" class="contact-item">💻 GitHub : ThileepanEdvin</a>
+          <a href="https://www.linkedin.com/in/edvin-thileepan-858794393/" target="_blank" rel="noreferrer" class="contact-item">🔗 LinkedIn : edvin-thileepan</a>
+          <div class="contact-item">📞 +33 (0) 6 46 44 20 63</div>
         </div>
       </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Thileepan Edvin — Portfolio</p>
     </div>
-  </section>
+  </footer>
 
-  <!-- CONTACT -->
-  <section id="contact" class="section contact">
-    <div class="section__head">
-      <h2>Contact</h2>
-      <p>Tu peux me contacter facilement ici :</p>
-    </div>
-
-    <div class="contact__box">
-      <a class="contact__item" href="mailto:thileepanedvin@gmail.com">📩 thileepanedvin@gmail.com</a>
-      <a class="contact__item" href="https://github.com/ThileepanEdvin" target="_blank" rel="noreferrer">💻 GitHub : ThileepanEdvin</a>
-      <a class="contact__item" href="https://www.linkedin.com/in/edvin-thileepan-858794393/" target="_blank" rel="noreferrer">🔗 LinkedIn : edvin-thileepan</a>
-      <div class="contact__item">📞 +33 (0) 6 46 44 20 63</div>
-    </div>
-  </section>
-</main>
-
-<footer class="footer">
-  <p>© 2026 Thileepan Edvin — Portfolio</p>
-</footer>
-
-<script src="script.js"></script>
+  <script src="script.js"></script>
 </body>
 </html>

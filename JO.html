@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Site collaboratif — Paris 2024 | Thileepan Edvin</title>
+  <meta name="description" content="Projet de site web collaboratif sur les Jeux Olympiques : HTML, CSS, navigation multi-pages et travail en équipe." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-container">
+      <a href="index.html" class="logo">
+        <span class="logo-light">THILEEPAN</span>
+        <span class="logo-accent">EDVIN</span>
+      </a>
+
+      <nav class="main-nav">
+        <a href="index.html#projets">← Retour</a>
+        <a href="index.html#contact">Contact</a>
+      </nav>
+
+      <button id="theme-toggle" class="theme-toggle" aria-label="Changer le thème">🌙</button>
+    </div>
+  </header>
+
+  <main>
+    <section class="project-hero">
+      <div class="container narrow">
+        <p class="section-kicker">Projet web collaboratif</p>
+        <h1>Site web collaboratif — Paris 2024</h1>
+        <p class="project-intro">
+          Projet réalisé en équipe autour des Jeux Olympiques.  
+          L’objectif était de créer un site multi-pages en HTML/CSS avec une navigation claire,
+          un contenu illustré et une cohérence visuelle.
+        </p>
+
+        <div class="tags big-tags">
+          <span>HTML</span>
+          <span>CSS</span>
+          <span>Travail en équipe</span>
+        </div>
+
+        <div class="hero-actions">
+          <a href="https://thileepanedvin.github.io/Site-JO28/" target="_blank" rel="noreferrer" class="btn btn-primary">Voir le site en ligne</a>
+          <a href="index.html#projets" class="btn btn-secondary">Retour aux projets</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="section">
+      <div class="container narrow">
+        <div class="project-gallery">
+          <figure class="project-shot">
+            <img src="assets/images/JO/accueil.png" alt="Accueil Paris 2024">
+            <figcaption>Page d’accueil du site</figcaption>
+          </figure>
+
+          <figure class="project-shot">
+            <img src="assets/images/JO/accueil2.png" alt="Barre de navigation">
+            <figcaption>Page d’accueil — barre de navigation</figcaption>
+          </figure>
+
+          <figure class="project-shot">
+            <img src="assets/images/JO/avis.png" alt="Page photo JO">
+            <figcaption>Page photo — illustration de l’impact des JO</figcaption>
+          </figure>
+        </div>
+
+        <div class="project-info-grid">
+          <div class="info-card">
+            <h3>Ce que j’ai fait</h3>
+            <ul>
+              <li>Mise en page HTML/CSS</li>
+              <li>Organisation des contenus</li>
+              <li>Navigation entre les pages</li>
+              <li>Intégration d’images et harmonisation visuelle</li>
+            </ul>
+          </div>
+
+          <div class="info-card">
+            <h3>Ce que cela montre</h3>
+            <ul>
+              <li>Construction d’un site multi-pages</li>
+              <li>Lisibilité et structure visuelle</li>
+              <li>Capacité à travailler en équipe</li>
+              <li>Présentation claire d’un sujet</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <p>© 2026 Thileepan Edvin — Portfolio</p>
+    </div>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
