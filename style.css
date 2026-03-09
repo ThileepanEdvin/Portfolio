@@ -118,6 +118,13 @@ ul {
   display: flex;
   align-items: center;
   gap: 22px;
+  flex-wrap: nowrap;
+  justify-content: space-between;
+
+}
+
+.main-nav > a{
+  white-space: nowrap;
 }
 
 .main-nav a {
@@ -663,17 +670,18 @@ ul {
 .nav-links{
   display:flex;
   gap:10px;
-  margin-left:20px;
+  margin-left:30px;
+  align-items:center;
+  flex-shrink:0;
 }
-
 .nav-btn{
-  background:var(--surface);
-  border:1px solid var(--border);
-  padding:8px 14px;
-  border-radius:8px;
-  font-size:14px;
-  font-weight:500;
-  transition:0.25s;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 10px 16px;
+  border-radius: 10px;
+  text-decoration: none;
+  white-space: nowrap;
 }
 
 .nav-btn:hover{
@@ -708,13 +716,5 @@ box-shadow:0 10px 25px rgba(0,0,0,0.35);
 
 .project-shot img:hover{
 transform:scale(1.02);
-}
-
-.project-shot figcaption{
-margin-top:14px;
-font-size:15px;
-opacity:0.85;
-max-width:70%;
-text-align:center;
 }
 
